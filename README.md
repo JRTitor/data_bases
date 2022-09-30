@@ -3,13 +3,13 @@
 вот ссылочка 
 https://drive.google.com/drive/folders/19ZZFUAOf29R6J0Km-eYR0RZHvOx58wtf
 
-# Условимся, что у нас будут 
+# Условимся, что у нас будут таблицы
  * Train
  * Stations
  * Schedules
 
-# Scheules
- * scheules_id -- уникальный номер строки таблицы Scheules
+# Schedules
+ * schedules_id -- уникальный номер строки таблицы Scheules
  * station_id -- уникальный номер строки таблицы Stations // возможно добавим для поиска локации станции
  * arrival -- время прибытия
  * departure  -- время отбытия
