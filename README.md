@@ -43,7 +43,7 @@ https://drive.google.com/drive/folders/19ZZFUAOf29R6J0Km-eYR0RZHvOx58wtf
  * sleeper -- значения (true, false). Если true, в поезде тольео лежачие места(может быть нужен комплект белья), false в поезде только сидячие места --- bool
  * first_class -- типо СВ (true, false) --- bool
  * second_class -- типо купе (true, false) --- bool
- * third class -- типо плацкарт (true, false) --- bool
+ * third_class -- типо плацкарт (true, false) --- bool
 
 ### Вопросы на подумать и обсуждение (TODO)
 * Что такое Логическая модель и как её сделать
