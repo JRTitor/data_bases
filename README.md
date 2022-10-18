@@ -44,3 +44,5 @@ https://drive.google.com/drive/folders/19ZZFUAOf29R6J0Km-eYR0RZHvOx58wtf
 
  * Сергей : Ленинградский вокзал
   
+## Заполнение таблиц
+Insert into "Table" (id) Values (int)
