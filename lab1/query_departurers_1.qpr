@@ -1,0 +1,4 @@
+SELECT Departures.*;
+ FROM data1!departures;
+ ORDER BY Departures.date DESC, Departures.hour DESC,;
+  Departures.minutes DESC

@@ -1,0 +1,3 @@
+SELECT Stations.station_name;
+ FROM data1!stations;
+ WHERE  Stations.location IN ("Tver", "Moscow", "Tula")

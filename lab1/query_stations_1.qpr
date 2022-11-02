@@ -1,0 +1,3 @@
+SELECT Stations.*;
+ FROM data1!stations;
+ WHERE  Stations.platfromway_amount >= 10

@@ -1,0 +1,4 @@
+SELECT Stations.*;
+ FROM data1!stations;
+ WHERE  Stations.location LIKE "M%";
+   OR  Stations.location LIKE "_e%"

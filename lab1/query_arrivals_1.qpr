@@ -1,0 +1,9 @@
+SELECT Stations.station_name, Stations.location,;
+  MIN(Arrivals.date) AS earliest_date,;
+  MIN(Arrivals.hour) AS earliest_hour,;
+  MIN(Arrivals.minutes) AS earliest_minutes;
+ FROM ;
+     data1!stations ;
+    INNER JOIN data1!arrivals ;
+   ON  Stations.station_id = Arrivals.station_id;
+ GROUP BY Stations.station_name, Stations.location

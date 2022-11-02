@@ -1,0 +1,4 @@
+SELECT DISTINCT Departures.station_id, Departures.date;
+ FROM ;
+     data1!departures;
+ WHERE  Departures.date = DATE(2021,10,1)

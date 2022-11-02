@@ -1,0 +1,3 @@
+SELECT Trains_routes.*;
+ FROM data1!trains_routes;
+ WHERE  Trains_routes.departure_date = Trains_routes.arrival_date
