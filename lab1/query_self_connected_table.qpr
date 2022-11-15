@@ -1,0 +1,7 @@
+SELECT Fir.train_route_name AS id_f1, Se.train_route_name AS id_f2,;
+  Fir.station_from_id;
+ FROM ;
+     data1!trains_routes Fir,;
+    data1!trains_routes Se;
+ WHERE  Fir.station_from_id = Se.station_from_id;
+   AND  Fir.train_route_name <> Se.train_route_name
