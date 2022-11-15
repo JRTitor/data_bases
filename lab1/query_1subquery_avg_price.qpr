@@ -1,0 +1,10 @@
+
+SELECT Trains_routes.train_routes_id, Trains_routes.train_route_name,;
+  Tickets.price;
+ FROM ;
+     data1!trains_routes ;
+    INNER JOIN data1!departures ;
+   ON  Trains_routes.train_routes_id = Departures.train_routes_id ;
+    INNER JOIN data1!tickets ;
+   ON  Tickets.dep_id = Departures.departure_id;
+ WHERE  Tickets.price >= (SELECT AVG(Tickets.price) FROM Tickets)

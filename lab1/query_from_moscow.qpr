@@ -1,0 +1,4 @@
+SELECT Trains_routes.train_routes_id, Trains_routes.train_route_name;
+ FROM ;
+     data1!trains_routes;
+ WHERE  ( station_from_id ) IN (SELECT station_id FROM Stations WHERE Location = "Moscow")
