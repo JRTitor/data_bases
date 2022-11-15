@@ -1,0 +1,5 @@
+
+SELECT *;
+ FROM ;
+     Tickets;
+ WHERE  Tickets.price >= ALL (SELECT AVG (Tickets.price) FROM Tickets)
