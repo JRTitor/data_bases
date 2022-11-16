@@ -1,0 +1,4 @@
+SELECT *;
+ FROM ;
+     trains_routes;
+ WHERE  ( station_to_id ) = SOME (SELECT station_from_id FROM trains_routes)
