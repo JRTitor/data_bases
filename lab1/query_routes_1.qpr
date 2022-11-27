@@ -1,3 +1,8 @@
-SELECT Trains_routes.*;
- FROM data1!trains_routes;
- WHERE  Trains_routes.departure_date = Trains_routes.arrival_date
+SELECT Trains_routes.*, Departures.dep_date, Arrivals.arr_date;
+ FROM ;
+     data1!trains_routes,;
+    departures,;
+    arrivals;
+ WHERE (  Trains_routes.train_routes_id = Departures.train_routes_id;
+   AND  Trains_routes.train_routes_id = Arrivals.train_routes_id );
+   AND  ( dep_date ) = ( arr_date )

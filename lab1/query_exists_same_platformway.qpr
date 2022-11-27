@@ -1,0 +1,6 @@
+SELECT Departures.*;
+ FROM ;
+     departures;
+ WHERE   Exists (SELECT arrivals.platformway FROM arrivals  				  WHERE departures.platformway = arrivals.platformway)
+
+

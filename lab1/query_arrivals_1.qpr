@@ -1,11 +1,12 @@
 SELECT Stations.station_name, Stations.location,;
-  MIN(arrivals.arr_date) AS earliest_date,;
-  MIN(trains_routes.arrival_hour) AS earliest_hour,;
-  MIN(trains_routes.arrival_minutes) AS earliest_minutes;
+  MIN(Arrivals.arr_date) AS earliest_date,;
+  MIN(Trains_routes.arrival_hour) AS earliest_hour,;
+  MIN(Trains_routes.arrival_minutes) AS earliest_minutes;
  FROM ;
-     data1!stations ;
-    INNER JOIN data1!trains_routes ;
-   ON  Stations.station_id = trains_routes.station_to_id;
-    INNER JOIN data1!arrivals ;
-   ON  arrivals.train_routes_id = trains_routes.train_routes_id;
- GROUP BY Stations.station_name, Stations.location DESC;
+     data1!stations,;
+    data1!trains_routes,;
+    data1!arrivals;
+ WHERE  ( station_id ) = ( station_to_id );
+   AND  Arrivals.train_routes_id = Trains_routes.train_routes_id;
+ GROUP BY Stations.station_name, Stations.location;
+ ORDER BY 3, 4

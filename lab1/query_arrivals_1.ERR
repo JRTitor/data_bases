@@ -1,2 +1,0 @@
-SELECT Stations.station_name, Stations.location, MIN(arrivals.arr_date) AS earliest_date, MIN(trains_routes.arrival_hour) AS earliest_hour, MIN(trains_routes.arrival_minutes) AS earliest_minutes FROM  data1!stations  INNER JOIN data1!trains_routes  ON  Stations.station_id = trains_routes.station_to_id INNER JOIN data1!arrivals  ON  arrivals.train_routes_id = trains_routes.train_routes_id GROUP BY Stations.station_name, Stations.location DESC 
-Error in line 11: Command contains unrecognized phrase/keyword.

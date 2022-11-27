@@ -1,4 +1,6 @@
-SELECT DISTINCT Departures.station_id, Departures.date;
+SELECT DISTINCT Trains_routes.station_from_id, Departures.dep_date;
  FROM ;
-     data1!departures;
- WHERE  Departures.date = DATE(2021,10,1)
+     departures,;
+    trains_routes;
+ WHERE  Departures.dep_date = DATE(2021,10,1);
+   AND  Departures.train_routes_id = Trains_routes.train_routes_id

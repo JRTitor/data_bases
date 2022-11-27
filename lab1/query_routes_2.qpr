@@ -1,7 +1,9 @@
 SELECT Stations.location, Stations.station_name,;
-  Trains_routes.train_route_name, Trains_routes.arrival_date;
+  Trains_routes.train_route_name, Arrivals.arr_date;
  FROM ;
-     data1!stations ;
-    INNER JOIN data1!trains_routes ;
-   ON  Stations.station_id = Trains_routes.station_to_id;
- WHERE  Trains_routes.arrival_date = DATE(2021,10,3)
+     stations,;
+    trains_routes,;
+    arrivals;
+ WHERE (  Stations.station_id = Trains_routes.station_to_id;
+   AND  Trains_routes.train_routes_id = Arrivals.train_routes_id );
+   AND  ( arr_date ) = DATE(2021,10,3)

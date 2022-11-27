@@ -1,0 +1,14 @@
+SELECT Trains_routes.station_from_id;
+ FROM ;
+     trains_routes,;
+    departures;
+ WHERE  Trains_routes.train_routes_id = Departures.train_routes_id;
+ INTO CURSOR tmp  
+UPDATE departures SET platformway = 9;
+WHERE departure_id = 4 AND NOT EXISTS;
+		(SELECT platformway;
+		 FROM departures, trains_routes;
+		 WHERE trains_routes.station_from_id = tmp.station_from_id;
+		 AND trains_routes.train_routes_id = departures.train_routes_id;
+		 AND platformway = 9;
+		 AND dep_date = DATE(2021, 10, 01););

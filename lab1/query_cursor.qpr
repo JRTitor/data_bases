@@ -5,6 +5,7 @@ SELECT COUNT(Trains_routes.train_routes_id) AS count_of_routes,;
  GROUP BY Trains_routes.station_from_id;
  INTO CURSOR tmp  
  
-SELECT count_of_routes, station;
- FROM tmp;
- WHERE count_of_routes >= ALL(SELECT count_of_routes FROM tmp)
+SELECT count_of_routes, station_name, location;
+ FROM tmp, Stations;
+ WHERE count_of_routes >= ALL(SELECT count_of_routes FROM tmp);
+ 	AND station_id = station;

@@ -1,0 +1,3 @@
+INSERT INTO departures (departure_id, train_routes_id, dep_date);
+VALUES (17, 0, {^2021/10/02})
+

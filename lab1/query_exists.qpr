@@ -8,4 +8,5 @@ SELECT Trains_routes.train_routes_id, Trains_routes.train_route_name,;
   Trains_routes.arrival_minutes AS minutes;
  FROM ;
      trains_routes;
- WHERE   Exists (SELECT train_routes_id FROM Arrivals  		WHERE arr_date = Date(2021, 10, 02) AND train_routes_id = trains_routes.train_routes_id)
+ WHERE   Exists (SELECT train_routes_id FROM Arrivals;
+ 				  WHERE arr_date = Date(2021, 10, 02) AND train_routes_id = trains_routes.train_routes_id)
