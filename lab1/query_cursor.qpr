@@ -1,12 +1,10 @@
 SELECT COUNT(Trains_routes.train_routes_id) AS count_of_routes,;
-  Trains_routes.station_from_id AS station,;
-  Stations.station_name AS city;
+  Trains_routes.station_from_id AS station;
  FROM ;
-     trains_routes ;
-    INNER JOIN stations ;
-   ON  ( station_id ) = ( station_from_id );
- GROUP BY Trains_routes.station_from_id, Stations.station_name;
+     trains_routes;
+ GROUP BY Trains_routes.station_from_id;
  INTO CURSOR tmp  
-SELECT count_of_routes, station, city;
+ 
+SELECT count_of_routes, station;
  FROM tmp;
  WHERE count_of_routes >= ALL(SELECT count_of_routes FROM tmp)

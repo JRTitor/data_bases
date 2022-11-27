@@ -1,0 +1,14 @@
+SELECT ((Arrivals.arr_date-Departures.dep_date)*24*60+(arrival_hour*60+arrival_minutes)-(departure_hour*60+departure_minutes)) AS traveltime;
+ FROM ;
+     trains_routes,;
+    arrivals,;
+    departures;
+ WHERE (  Trains_routes.train_routes_id = Arrivals.train_routes_id;
+   AND  Trains_routes.train_routes_id = Departures.train_routes_id );
+   AND  ( station_from_id ) IN (3,12);
+ INTO CURSOR tmp  
+SELECT trains_routes.*, departures.dep_date, arrivals.arr_date,((arrivals.arr_date - departures.dep_date)*24*60 + (arrival_hour*60+arrival_minutes) - (departure_hour*60+departure_minutes)) as travel;
+FROM trains_routes, arrivals, departures;
+WHERE trains_routes.train_routes_id = arrivals.train_routes_id AND;
+ trains_routes.train_routes_id = departures.train_routes_id AND;
+ ((arrivals.arr_date - departures.dep_date)*24*60 + (arrival_hour*60+arrival_minutes) - (departure_hour*60+departure_minutes)) > (SELECT AVG(traveltime) FROM tmp);
